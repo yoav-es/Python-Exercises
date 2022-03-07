@@ -24,7 +24,8 @@ plan does not allow some employees to reach some spaces) then state that it is s
 
 Code explanation 
 
-Class board – a class for creating the board – opening the file and reading the board from the file. While loading creating an array of empty slots and an array of employees.
+Class board – a class for creating the board – opening the file and reading the board from the file.
+While loading creating an array of empty slots and an array of employees.
 
 Class Point – represents a point on the board with x and y coordinates
 
@@ -37,7 +38,6 @@ Space - class a class the represents a piece on the board, it’s coordinates on
 To find the shortest distances between an employee and an empty space, I chose to implement the BFS algorithm. 
 
 First, for each empty node there is a need to calculate the distance from to every of its neighboring nodes and fill the neighbor’s array. 
-After that, using BFS algorithm to find the minimal distance between the employee to every empty point and return the point that is at the same distance for every employee. Every time there isn’t a path from an employee to a clear space, the space is fined by a hundred to ensure that space will no be chosen as the minimal path.
-
- 
-
+After that, using BFS algorithm to find the minimal distance between the employee to every empty point and return the point
+that is at the same distance for every employee. Every time there isn’t a path from an employee to a clear space, 
+the sum is raised by a hundred to ensure that space will no be chosen as the minimal path.
