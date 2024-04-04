@@ -5,7 +5,6 @@ from time import sleep
 #CONSTANTS
 REG_TO_READ = 0
 REG_TO_WRITE = 0
-#using ch340x USB TO RS485 adapter
 PORT_RTU = 'COMX' # COM FOR WINDOWS, 
 #PORT_RTU = 'dev/serial/by-id/usb-1a86_USB_Serial-if00-port0' #port for linux(ubuntu)
 BAUD = 0
